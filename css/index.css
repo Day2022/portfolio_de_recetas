@@ -5,7 +5,7 @@
 
 .descripcion_pag {
     border: 1px solid black;
-    width: 350px;
+    max-width: 350px;
     background-color: white;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -19,8 +19,12 @@ main {
     text-align: center;
 }
 
-main > * {
-    margin: 0 auto;
+main section {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 main h1 {
