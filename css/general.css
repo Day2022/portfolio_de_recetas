@@ -32,20 +32,27 @@ body {
     /* Usamos la fuente importada */
     font-family: 'Montserrat', sans-serif;
     font-family: 'Roboto', sans-serif;
+    background: rgb(254, 255, 13);
+    background: radial-gradient(circle, rgba(254, 255, 13, 1) 0%, rgba(255, 204, 1, 1) 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 /* adaptamos las imagenes al 100%, Lautaro comenté esta imagen para no tener scroll vertical y no se vea pixelada*/
 
-/* img {
+img {
     width: 100%;
-} */
+}
 
 /* Configuramos las secciones que se repiten en todas las páginas */
-header {
+header,
+footer {
     /* Color principal */
     background-color: #FFCC01;
-    height: 80px;
-    width: 100vw;
+    min-height: 10vh;
+    width: 100%;
     text-align: center;
     /* Configurando flex box con los elementos */
     display: flex;
@@ -63,20 +70,6 @@ header {
     /* Agregando sombra al logo */
     filter: drop-shadow(0 0 3px black);
 }
-/* 
-.img_principal {
-    border-style: solid;
-    border-color: black;
-    border-width: 1px;
-}
-
-.descripcion_pag {
-    border: 1px, black, solid;
-    width: 350px;
-    background-color: white;
-    padding-top: 5px;
-    padding-bottom: 5px;
-} */
 
 /* Configurando los li y anchor */
 header ul li {
@@ -99,13 +92,18 @@ header ul {
 /* Configuración general de main */
 main {
     /* Color complementario */
-    background: rgb(254, 255, 13);
-    background: radial-gradient(circle, rgba(254, 255, 13, 1) 0%, rgba(255, 204, 1, 1) 100%);
     padding: 2rem;
     /* Centrando texto */
     text-align: center;
     /* Ocupar todo el espacio en blanco restante menos el alto de header y footer */
-    min-height: calc(100vh - 160px);
+    /* min-height: calc(100vh - 200px); */
+    min-height: 80vh;
+    /* Centramos el contenido del main */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
 }
 
 main h1 {
@@ -116,14 +114,15 @@ main h2 {
     font-size: 1.2rem;
 }
 
-/* Agregando contenedor
-main .container {
-    /* Limite ancho */
-    /* max-width: 1200px;
-    /* Centramos el contenido */
-    /* margin: 0 auto;
-} */
-
+.background-img {
+    width: 100%;  
+    height: 100%;  
+    position: absolute;    
+    background:transparent url(../multimedia/imagenes/fondo_wallpaper2.png) 
+               repeat scroll 0% 0%;  
+    opacity: .1;
+    z-index: -1;
+}
 /* Configuración de hover en los li */
 
 header ul li a:hover {
