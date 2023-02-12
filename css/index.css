@@ -25,8 +25,31 @@ main section {
     justify-content: center;
     align-items: center;
 }
+
+main 
+/* CORRECCIONES DESPUES DE AGREGAR BOOTSTRAP */
 /* Corrigiendo header después de agregar bootstrap */
-header .container ul {
-    margin: 0;
-    padding: 0;
+header .container nav ul {
+    margin: 0!important;
+    padding: 0!important;
+}
+#ul {
+    margin: 0!important;
+    padding: 0!important;
+}
+
+/* Carousel correccion slide */
+.container_imagenes {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel {
+    overflow: hidden;
+}
+
+main img {
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px black;
+    border: 1rem double;
 }
