@@ -25,3 +25,8 @@ main section {
     justify-content: center;
     align-items: center;
 }
+/* Corrigiendo header después de agregar bootstrap */
+header .container ul {
+    margin: 0;
+    padding: 0;
+}
