@@ -22,6 +22,7 @@ section {
     margin-top: 40px;
     height: calc(100% - 40px);
     width: 100%;
+    /* Efecto hoja de papel */
     background-image: repeating-linear-gradient(white 0px, white 24px, steelblue 25px);
     box-shadow: 0 0 10px black;
 }

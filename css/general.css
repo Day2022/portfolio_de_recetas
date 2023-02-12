@@ -54,21 +54,21 @@ footer {
     min-height: 10vh;
     width: 100%;
     text-align: center;
-    /* Configurando flex box con los elementos */
     display: flex;
-    justify-content: space-around;
     align-items: center;
     /* Agregando sombra */
     position: relative;
     box-shadow: 0 1px 5px black;
 }
-
-header {
+header .container {
+    /* Configurando flex box con los elementos */
+    display: flex;
     flex-wrap: wrap;
-}
-
-header a {
-    width: 20%;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    max-width: 1000px;
+    column-gap: 5rem;
 }
 
 /* Configurando la imagen logo para que entre en el header */
@@ -83,7 +83,7 @@ header a {
 /* Configurando los li y anchor */
 header ul li {
     list-style-type: none;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 header a, footer a {text-decoration: none;}
 header a {
@@ -128,7 +128,7 @@ main h2 {
 }
 
 /* Agregando contenedor */
-main .container {
+.container {
     /* Limite ancho */
     max-width: 1200px;
     /* Centramos el contenido */
