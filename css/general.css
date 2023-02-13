@@ -141,7 +141,7 @@ main h2 {
     position: absolute;    
     background:transparent url(../multimedia/imagenes/fondo_wallpaper2.png) 
                repeat scroll 0% 0%;  
-    opacity: .1;
+    opacity: .05;
     z-index: -1;
 }
 /* Configuración de hover en los li */
