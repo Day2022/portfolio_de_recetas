@@ -26,7 +26,6 @@ main section {
     align-items: center;
 }
 
-main 
 /* CORRECCIONES DESPUES DE AGREGAR BOOTSTRAP */
 /* Corrigiendo header después de agregar bootstrap */
 header .container nav ul {
@@ -38,12 +37,17 @@ header .container nav ul {
     padding: 0!important;
 }
 
+main a {
+    text-decoration: none;
+    color: black;
+}
+
 /* Carousel correccion slide */
 .carousel {
     overflow: hidden;
 }
 
-main img {
+main .container_imagenes img {
     border-radius: 10px;
     box-shadow: 1px 1px 5px black;
     border: 1rem double;
@@ -54,3 +58,9 @@ main img {
         width: unset;
      }
  }
+
+ @media (max-width: 450px) { 
+      main {
+        padding: 0;
+      }
+  }

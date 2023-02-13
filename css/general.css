@@ -171,10 +171,6 @@ footer {
     font-size: 2rem;
 }
 
-.borde_mapa {
-    border: 1px solid black;
-}
-
 footer a {
     margin: 15px;
     text-decoration: none;
