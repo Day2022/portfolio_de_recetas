@@ -14,7 +14,7 @@ no se sume al modelo de caja */
 html {
     box-sizing: border-box;
 }
-
+/* Hola, estoy acá. Creo que hay que modif header .container*/
 
 *,
 *:before,
@@ -64,7 +64,7 @@ header .container {
     /* Configurando flex box con los elementos */
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     height: 100%;
     max-width: 1000px;
