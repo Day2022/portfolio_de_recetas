@@ -67,6 +67,10 @@ header #container {
     column-gap: 5rem;
 }
 
+header #container a {
+    height: 75px;
+}
+
 main .container_imagenes img {
     border-radius: 10px;
     box-shadow: 1px 1px 5px black;
