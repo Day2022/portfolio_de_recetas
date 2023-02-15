@@ -46,9 +46,25 @@ main a {
     color: black;
 }
 
+header #container {
+    margin: 0 auto;
+    padding: 0;
+}
+
 /* Carousel correccion slide */
 .carousel {
     overflow: hidden;
+}
+
+header #container {
+    /* Configurando flex box con los elementos */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    max-width: 1000px;
+    column-gap: 5rem;
 }
 
 main .container_imagenes img {
