@@ -65,7 +65,7 @@ header #container {
     justify-content: space-evenly;
     align-items: center;
     height: 100%;
-    max-width: 1000px;
+    width: 80%;
     column-gap: 5rem;
 }
 
@@ -120,7 +120,7 @@ main .container_imagenes img {
         transform: scale(1);
     }
 }
-
+/* Medias */
 @media (min-width: 800px) {
     main img {
         width: unset;
@@ -130,5 +130,8 @@ main .container_imagenes img {
 @media (max-width: 450px) {
     main {
         padding: 0;
+    }
+    main .carousel-item h2 {
+        font-size: 1.2rem;
     }
 }

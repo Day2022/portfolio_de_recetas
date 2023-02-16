@@ -67,7 +67,7 @@ header .container {
     justify-content: space-evenly;
     align-items: center;
     height: 100%;
-    max-width: 1000px;
+    width: 80%;
     column-gap: 5rem;
 }
 
