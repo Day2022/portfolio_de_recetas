@@ -8,19 +8,33 @@ main>.contactos {
     grid-gap: 1rem;
 }
 
-main article {
+main section {
     max-width: 400px;
+    min-height: 400px;
     background-color: white;
     border-radius: 5px;
     box-shadow: 1px 1px 5px black;
-    border: 1px solid rgb(221, 220, 220);
+    border: 1px solid rgba(221, 220, 220);
     padding: 30px;
-    background-color: white;
+
+    display: flex;
+    flex-direction: column;
 }
 
-input {
-    margin-bottom: 12px;
-    width: 187px;
+main section form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+}
+
+main section form > * {
+    width: 100%;
+}
+
+main section form label:last-of-type {
+    display: flex;
+    justify-content: center;
+    column-gap: 2px;
 }
 
 .color_boton_enviar {
@@ -29,17 +43,38 @@ input {
     margin-top: 5px;
     padding: 5px 15px 5px 15px;
     width: 80px;
+    align-self: center;
 }
 
 textarea {
     resize: none;
+    height: 5rem;
+}
+
+main section:nth-child(2){
+    padding: 0 2rem;
+    height: 426px;
+
+    justify-content: space-evenly;
+
+}
+
+input:not(input[type=submit]), textarea {
+    width: 80%;
 }
 
 .tamaño_mapa {
-    height: 283px;
+    height: 330px;
+    width: 100%;
 }
 
 iframe {
     display: block;
     border-radius: 0 0 5px 5px;
 }
+
+@media (max-width: 490px) { 
+     .contactos{
+        padding: 1rem 0;
+     }
+ }
