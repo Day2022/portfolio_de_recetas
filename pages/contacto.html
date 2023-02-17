@@ -32,25 +32,29 @@
             </nav>
         </div>
     </header>
-    <main>
-        <div class="container">
-            <form action="">
-                <h1>¡Envianos tu receta!</h1>
-                <i class="fa-solid fa-user"></i>
-                <input type="text" name="nombre" placeholder="Nombre"><br>
-                <i class="fa-regular fa-envelope"></i>
-                <input type="email" name="correo" placeholder="Email"><br>
-                <i class="fa-sharp fa-solid fa-phone"></i>
-                <input type="tel" name="teléfono" placeholder="Teléfono"><br>
-                <textarea name="Mensaje" id="msj" placeholder="Comentario..."></textarea><br>
-                <input type="submit" name="enviar" value="Enviar">
-            </form>
-            <section>
-                <h2>Dirección</h2>
-                <iframe class="borde_mapa"
+    <main class="contactos">
+        <div class="contactos">
+            <article>
+                <form action="">
+                    <h1>¡Envianos tu receta!</h1><br>
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" name="nombre" placeholder="Nombre" required><br>
+                    <i class="fa-regular fa-envelope"></i>
+                    <input type="email" name="correo" placeholder="Email" required><br>
+                    <i class="fa-sharp fa-solid fa-phone"></i>
+                    <input type="tel" name="teléfono" placeholder="Teléfono" required><br>
+                    <i class="fa-sharp fa-regular fa-message-pen"></i>
+                    <textarea name="Mensaje" rows="8" cols="25" id="msj" placeholder="Comentario..."
+                        required></textarea><br>
+                    <input class="color_boton_enviar" type="submit" name="enviar" value="Enviar">
+                </form>
+            </article>
+            <article>
+                <h2>Dirección</h2><br>
+                <iframe class="tamaño_mapa"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.7001266958177!2d-58.472233099999976!3d-34.6875171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc90e57948b91%3A0x7c8136ba3f138ee5!2sLa%20Receta%20Perfecta!5e0!3m2!1ses!2sar!4v1675730120045!5m2!1ses!2sar"
                     allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </section>
+            </article>
         </div>
         <!-- Imagenes de fondo -->
         <div class="background-img"></div>

@@ -1,5 +1,45 @@
-
-.borde_mapa {
-    border: 1px solid black;
+main>.contactos {
+    display: flex;
+    /* wrap para cuando los articles no quepan */
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* Separación entre cada item del contenedor */
+    grid-gap: 1rem;
 }
-/* Perfecto!, voy para allá también */
+
+main article {
+    max-width: 400px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px black;
+    border: 1px solid rgb(221, 220, 220);
+    padding: 30px;
+    background-color: white;
+}
+
+input {
+    margin-bottom: 12px;
+    width: 187px;
+}
+
+.color_boton_enviar {
+    background-color: #b8b9bb;
+    border-color: #b8b9bb;
+    margin-top: 5px;
+    padding: 5px 15px 5px 15px;
+    width: 80px;
+}
+
+textarea {
+    resize: none;
+}
+
+.tamaño_mapa {
+    height: 283px;
+}
+
+iframe {
+    display: block;
+    border-radius: 0 0 5px 5px;
+}
